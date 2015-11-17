@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Remote Temperature</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="Updatera">Uppdatera</string>
+    <string name="updateGraph">Update graph</string>
+    <string name="Intervall">Intervall:</string>
+    <string name="Temperature">Temperature</string>
+    <string name="helpButton">Klick for help description</string>
+    <string name="tempDescription">Presentation of the latest temperature diagram</string>
+    <string name="projectInformationButton">Project Information</string>
+    <string name="contactButton">Contact</string>
+
+    <string name="startProjectInformation">
+        Projektet består av 3 delar. Första delen är hårdvara och enklare hårdvaruinriktad programmering. Detta i form av
+        en Arduino UNO som är ansluten till en DS18B20 temperatur sensor med ett område på -55 till 125°C. Arduino:n samlar
+        in datat regelbundet och sparar den senaste temperaturen i sitt minne.
+        Arduino:n är ansluten till Raspberry PI 2 via I2C protokollet. Detta innebär endast två anslutningar
+        mellan dessa. En för data och en för klocka. Raspberry PI 2 kör på operativsystemet Raspbian.
+        Varje timma hämtar Raspberry PI det senaste datat from Arduino och lägger in det i en mySQL databas
+        med datum och klockslag.
+        Den tredje delen är en app, skriven i Android, som kommuniserar med mySQL databasen via php-protokollet
+        och ansluter därmed mot raspberry PI:n via en apache webserver.
+        Nedan är ett kommunikationsschema för hur allt är upplagt:
+    </string>
+
+    <string name="ProjektInformation">
+        Den uppskattade totala tiden nedlagd på projektet är ca 2 veckor fulltid arbete utspritt på 2 månader. Alla
+        bilder för ikoner och bilder är lagligt införskaffade och delvis modifierade. För mer information
+        om arbeten som utför den senste tiden så finns hänvisningar till ett kandidatarbete med 5 andra
+        som fick högsta betyg på Chalmers Tekniska Högskola(Vårterm. 1015). Vår presentation används även detta året som
+        presentationsexempel för studenter som gör kandidatarbetet våren 2016.
+    </string>
+
+    <string name="cv"><a href="http://allander.duckdns.org/files/CV-Johan_Allander.pdf">Curriculum Vitae</a></string>
+    <string name="kandidatProjekt"><a href="http://allander.duckdns.org/files/Kandidatrapport.pdf">Kandidat Projekt, vt.2015, Chalmers Tekniska Högskola,  </a></string>
+    <string name="personligInformation">Jag är inovativ tvåbarnsfar som söker nya utmaningar.\nLänkar:</string>
+    <string name="kontaktInformation">Johan Allander\nTopasgatan 30\n42148 Västra Frölunda\nTel: 0761 702 252\n@:fam.allander@gmail.com</string>
+    <string name="myPhoneNumber">+46761702252</string>
+    <string name="extraInformation"><u>Mer information:</u></string>
+    <string name="firstInformation">Första infon</string>
+    <string name="firstExtenedInformation">Här finns utförlig information</string>
+
+    <string-array name="intervall">
+        <item>DAY</item>
+        <item>WEEK</item>
+        <item>MONTH</item>.
+       <item>YEAR</item>
+    </string-array>
+</resources>

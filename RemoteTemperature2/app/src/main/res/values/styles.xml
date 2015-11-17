@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Now, when we are using devices that support API 14 or later, we use the more "sleek" Holo theme! -->
+<color name="background_color">#240612</color>
+    <style name="MyStyle" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="MyStyle.big">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+</resources>

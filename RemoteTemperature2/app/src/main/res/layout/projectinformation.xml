@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#240612"
+    android:scrollbars="vertical">
+
+    <TextView
+        style="@style/MyStyle.big"
+        android:text="@string/projectInformationButton"
+        android:textSize="26sp"/>
+
+    <TextView
+        style="@style/MyStyle"
+        android:text="@string/startProjectInformation"
+        android:textSize="14sp"
+        android:gravity="left"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/firstInfo">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/ic_add_white_24dp"/>
+
+            <TextView
+                style="@style/MyStyle"
+                android:paddingLeft="5sp"
+                android:text="@string/firstInformation"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25sp"
+            android:id="@+id/firstExtendedInfo"
+            android:text="@string/firstExtenedInformation"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/ic_add_white_24dp"/>
+
+            <TextView
+                style="@style/MyStyle"
+                android:paddingLeft="5sp"
+                android:text="@string/firstInformation"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25sp"
+            android:text="@string/firstExtenedInformation"/>
+
+    </LinearLayout>
+
+
+
+
+    <ImageView
+        style="@style/MyStyle"
+        android:src="@drawable/kommunikationsdiagram"/>
+
+    <TextView
+        style="@style/MyStyle"
+        android:text="@string/ProjektInformation"
+        android:textSize="14sp"
+        android:gravity="left"/>
+
+</LinearLayout>
